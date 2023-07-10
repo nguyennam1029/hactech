@@ -1,8 +1,6 @@
 import React from "react";
 import WrapGrid from "../components/wrapGrid";
 import Heading from "../components/Heading";
-import { Link } from "react-router-dom";
-import NextIcon from "../icons/NextIcon";
 import RightColumn from "../components/RightColumn";
 
 const HomePage = () => {
