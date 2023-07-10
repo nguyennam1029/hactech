@@ -1,11 +1,19 @@
 import React from "react";
-import WrapGrid from "../components/wrapGrid";
+import WrapGrid from "../components/WrapGrid";
 import Heading from "../components/Heading";
 import RightColumn from "../components/RightColumn";
 
 const HomePage = () => {
   return (
     <>
+      <div class="relative w-full aspect-w-2 aspect-h-1">
+        <img
+          src="https://caodangbachkhoahanoi.edu.vn/wp-content/uploads/2023/06/slide-1.png"
+          alt="Banner"
+          class="object-cover w-full h-full"
+        />
+      </div>
+
       <div className="lg:w-[1140px] m-auto w-full grid md:grid-cols-3 grid-cols-1 gap-7 md:px-0 px-2">
         <div className="grid md:col-span-2 h-fit">
           <WrapGrid
@@ -137,18 +145,29 @@ const HomePage = () => {
         <div>
           <Heading heading="HỎI ĐÁP VÀ TƯ VẤN" />
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            {Array(4)
+            {Array(2)
               .fill(0)
               .map(() => (
-                <div className="flex items-center  rounded-md border border-[#ccc] bg-[#f7f7f7]">
-                  <h4 className="px-4 py-[18px] font-bold text-[#252525] text-lg md:line-clamp-3 line-clamp-2">
-                    Câu hỏi: Em đăng ký học Công nghệ thông tin thì sẽ học cụ
-                    thể những gì ? Học phí là bao nhiêu ?
-                  </h4>
-                  <p className="flex items-center justify-center h-full px-4 text-2xl font-bold bg-primary text-grayf1">
-                    +
-                  </p>
-                </div>
+                <>
+                  <div className="flex items-center  rounded-md border border-[#ccc] bg-[#f7f7f7]">
+                    <h4 className="px-4 py-[18px] font-bold text-[#252525] text-lg ">
+                      Câu hỏi: Em đăng ký học Công nghệ thông tin thì sẽ học cụ
+                      thể những gì ? Học phí là bao nhiêu ?
+                    </h4>
+                    <p className="flex items-center justify-center h-full px-4 text-2xl font-bold bg-primary text-grayf1">
+                      +
+                    </p>
+                  </div>
+                  <div className="flex items-center  rounded-md border border-[#ccc] bg-[#f7f7f7]">
+                    <h4 className="px-4 py-[18px] font-bold text-[#252525] text-lg ">
+                      Câu hỏi: Em đăng ký ngành Công nghệ ô tô, trong quá trình
+                      học có được thực hành, thực tập không ạ?
+                    </h4>
+                    <p className="flex items-center justify-center h-full px-4 text-2xl font-bold bg-primary text-grayf1">
+                      +
+                    </p>
+                  </div>
+                </>
               ))}
           </div>
         </div>

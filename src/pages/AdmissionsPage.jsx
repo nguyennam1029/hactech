@@ -1,6 +1,7 @@
 import React from "react";
 import RightColumn from "../components/RightColumn";
 import Heading from "../components/Heading";
+import Pagination from "../components/Pagination";
 
 const AdmissionsPage = () => {
   return (
@@ -122,6 +123,7 @@ const AdmissionsPage = () => {
                 </div>
               </>
             ))}
+          <Pagination />
         </div>
         <RightColumn />
       </div>

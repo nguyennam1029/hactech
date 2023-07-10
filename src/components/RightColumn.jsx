@@ -42,29 +42,50 @@ const RightColumn = () => {
           ></iframe>
         </div>
         <Heading heading="TIN MỚI"></Heading>
-        <div className="flex flex-col gap-3">
-          <Link to="/" className="flex gap-2 mb-3">
-            <img src="dl.jpg" />
-            <h3 className="text-[#212529] font-bold">
+        <div className="">
+          <Link
+            to="/"
+            className="grid grid-cols-2 gap-2 mb-2 lg:grid-cols-2 md:grid-cols-1"
+          >
+            <div className="w-fit">
+              <img src="dl.jpg" />
+            </div>
+            <h3 className="text-[#212529] font-bold lg:-ml-[18px] md:ml-0 -ml-[20px]">
               Vai trò của công nghệ thông tin trong dạy học
             </h3>
           </Link>
-          <Link to="/" className="flex gap-2 mb-3">
-            <img src="hoc-cnsstt.jpg" />
-            <h3 className="text-[#212529] font-bold">
+          <Link
+            to="/"
+            className="grid grid-cols-2 gap-2 mb-2 lg:grid-cols-2 md:grid-cols-1"
+          >
+            <div className="w-fit">
+              <img src="hoc-cnsstt.jpg" />
+            </div>
+            <h3 className="text-[#212529] font-bold lg:-ml-[18px] md:ml-0 -ml-[20px]">
               Sinh viên CNOTO đi thực tế tại công ty VAP
             </h3>
           </Link>
-          <Link to="/" className="flex gap-2 mb-3">
-            <img src="caossthang.jpg" />
-            <h3 className="text-[#212529] font-bold">
+          <Link
+            to="/"
+            className="grid grid-cols-2 gap-2 mb-2 lg:grid-cols-2 md:grid-cols-1"
+          >
+            <div className="w-fit">
+              <img src="caossthang.jpg" />
+            </div>
+            <h3 className="text-[#212529] font-bold lg:-ml-[18px] md:ml-0 -ml-[20px]">
               Sinh viên CNTT năm 2 đi thực tế tại công ty COMPAL
             </h3>
           </Link>
-          <Link to="/" className="flex gap-2 mb-3">
-            <img src="cntthhh150.png" />
-            <h3 className="text-[#212529] font-bold">
-              Sự khác nhau giữa công nghệ thông tin và chuyển đổi số
+
+          <Link
+            to="/"
+            className="grid grid-cols-2 gap-2 mb-2 lg:grid-cols-2 md:grid-cols-1"
+          >
+            <div className="w-fit">
+              <img src="dl.jpg" />
+            </div>
+            <h3 className="text-[#212529] font-bold lg:-ml-[18px] md:ml-0 -ml-[20px]">
+              Lễ tập trung sinh viên cao đẳng Bách Khoa năm học 2022
             </h3>
           </Link>
         </div>
