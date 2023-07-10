@@ -8,19 +8,45 @@ const HomePage = () => {
     <>
       <div className="lg:w-[1140px] m-auto w-full grid md:grid-cols-3 grid-cols-1 gap-7 md:px-0 px-2">
         <div className="grid md:col-span-2 h-fit">
-          <WrapGrid />
+          <WrapGrid
+            urlL2="flashss.png"
+            urlR2="zdsdsd.jpg "
+            title2="Giải đáp thắc mắc: Công nghệ thông tin làm nghề gì? Giải đáp thắc mắc: Công nghệ thông tin làm nghề"
+          />
           <WrapGrid
             heading="CÔNG NGHỆ Ô TÔ"
             urlHot="flash.png"
             title="TRƯỜNG CAO ĐẲNG BÁCH KHOA TẠI HÀ NỘI THÔNG BÁO TUYỂN"
             des="Với mục tiêu trở thành trường học hàng đầu về chất lượng đào tạo, đáp ứng nh"
             urlL="dien-con.jpg"
+            urlL2="hahaha.jpg"
+            urlR2="nganh-cong-nghe-ssc.jpg"
           />
           <WrapGrid
             heading="NGÔN NGỮ TRUNG QUỐC"
             urlHot="china.jpg"
+            urlR2="anh-ao-cu-nhan-chup-1-nguoi-300x200.jpg"
+            urlL2="edew-300x200.jpg"
             title="Cơ hội làm việc của sinh viên ngôn ngữ Trung sau khi ra trường"
             des="Học tiếng Trung có lợi ích gì? Việc chọn học thêm một ngôn ngữ thứ ba, lại còn là"
+          />
+
+          <WrapGrid
+            heading="NGÔN NGỮ HÀN QUỐC"
+            urlHot="nganh-ngon-ngu-tieng-han-quoc-trang-tuyen-sinh-300x200.jpg"
+            urlL2="nganh-ngon-ngu-han-quoc-4-300x200.jpg"
+            urlR2="nganh-cong-nghe-ssc.jpg"
+            title="Cơ hội làm việc của sinh viên ngôn ngữ Trung sau khi ra trường"
+            des="Học tiếng Trung có lợi ích gì? Việc chọn học thêm một ngôn ngữ thứ ba, lại còn là"
+          />
+          <WrapGrid
+            heading="TIN TỨC - ĐÀO TẠO"
+            urlHot="dl4-300x200.jpg"
+            title="TRƯỜNG CAO ĐẲNG BÁCH KHOA TẠI HÀ NỘI THÔNG BÁO TUYỂN"
+            des="Với mục tiêu trở thành trường học hàng đầu về chất lượng đào tạo, đáp ứng nh"
+            urlL="dien-con.jpg"
+            urlL2="hahaha.jpg"
+            urlR2="nganh-cong-nghe-ssc.jpg"
           />
         </div>
 
@@ -31,30 +57,53 @@ const HomePage = () => {
         <div>
           <Heading heading="HOẠT ĐỘNG SINH VIÊN" />
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 md:grid-cols-2">
-            {Array(4)
+            {Array(2)
               .fill(0)
               .map(() => (
-                <div className="relative last:hidden md:last:block">
-                  <img
-                    src="caothang.jpg"
-                    className="object-cover w-full h-full"
-                  />
-                  <h4 className="absolute left-0 right-0 text-grayf1 py-2 uppercase bottom-0 flex gap-1 items-center justify-center bg-[#000000] opacity-70">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-5 h-5"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    Khoa công nghệ thông tin
-                  </h4>
-                </div>
+                <>
+                  <div className="relative last:hidden md:last:block">
+                    <img
+                      src="caothang.jpg"
+                      className="object-cover w-full h-full"
+                    />
+                    <h4 className="absolute left-0 right-0 text-grayf1 py-2 uppercase bottom-0 flex gap-1 items-center justify-center bg-[#000000] opacity-70">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="w-5 h-5"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      Khoa công nghệ thông tin
+                    </h4>
+                  </div>
+                  <div className="relative last:hidden md:last:block">
+                    <img
+                      src="20170106141817-3_841774935798.jpg"
+                      className="object-cover w-full h-full"
+                    />
+                    <h4 className="absolute left-0 right-0 text-grayf1 py-2 uppercase bottom-0 flex gap-1 items-center justify-center bg-[#000000] opacity-70">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="w-5 h-5"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      Khoa công nghệ thông tin
+                    </h4>
+                  </div>
+                </>
               ))}
           </div>
         </div>

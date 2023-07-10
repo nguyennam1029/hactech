@@ -141,7 +141,7 @@ const Header = () => {
                 placeholder="Tìm kiếm..."
                 className="w-full px-4 outline-none rounded-2xl h-9"
               />
-              <span className="absolute right-[37px] top-[6px] text-primary">
+              <span className="absolute md:right-[18px] right-9 top-[6px] text-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

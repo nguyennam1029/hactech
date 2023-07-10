@@ -43,16 +43,30 @@ const RightColumn = () => {
         </div>
         <Heading heading="TIN MỚI"></Heading>
         <div className="flex flex-col gap-3">
-          {Array(4)
-            .fill(0)
-            .map(() => (
-              <Link to="/" className="flex gap-2 mb-3">
-                <img src="dl.jpg" />
-                <h3 className="text-[#212529] font-bold">
-                  Vai trò của công nghệ thông tin trong dạy học
-                </h3>
-              </Link>
-            ))}
+          <Link to="/" className="flex gap-2 mb-3">
+            <img src="dl.jpg" />
+            <h3 className="text-[#212529] font-bold">
+              Vai trò của công nghệ thông tin trong dạy học
+            </h3>
+          </Link>
+          <Link to="/" className="flex gap-2 mb-3">
+            <img src="hoc-cnsstt.jpg" />
+            <h3 className="text-[#212529] font-bold">
+              Sinh viên CNOTO đi thực tế tại công ty VAP
+            </h3>
+          </Link>
+          <Link to="/" className="flex gap-2 mb-3">
+            <img src="caossthang.jpg" />
+            <h3 className="text-[#212529] font-bold">
+              Sinh viên CNTT năm 2 đi thực tế tại công ty COMPAL
+            </h3>
+          </Link>
+          <Link to="/" className="flex gap-2 mb-3">
+            <img src="cntthhh150.png" />
+            <h3 className="text-[#212529] font-bold">
+              Sự khác nhau giữa công nghệ thông tin và chuyển đổi số
+            </h3>
+          </Link>
         </div>
         <Heading heading="THEO DÕI CHÚNG TÔI"></Heading>
         <div>

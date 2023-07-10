@@ -5,9 +5,12 @@ import Heading from "./Heading";
 const WrapGrid = ({
   heading = "CÔNG NGHỆ THÔNG TIN",
   urlL = "./8-muc-luong.jpg",
+  urlL2 = "./8-muc-luong.jpg",
   urlHot = "cntt.jpg",
+  urlR2 = "./cntt2.jpg",
   urlR = "./cntt2.jpg",
   title = "Triển vọng và nhu cầu tuyển dụng của ngành công nghệ thông tin",
+  title2 = "Triển vọng và nhu cầu tuyển dụng của ngành công nghệ thông tin",
   des = " Ở thời điểm hiện tại, ngành công nghệ thông tin vẫn đang trên đà biến đổi và",
 }) => {
   return (
@@ -24,12 +27,18 @@ const WrapGrid = ({
           </Link>
         </div>
         <div className="grid grid-cols-2 gap-4 md:col-span-2">
-          {Array(2)
+          {Array(1)
             .fill(0)
             .map(() => (
               <>
                 <Link to="/" className="relative block h-[169px]">
                   <img src={urlL} className="object-cover h-full" />
+                  <p className="px-2 py-[4px] absolute left-0 right-0 bottom-0 overflow-hidden text-sm bg-primary opacity-80 text-grayf1 truncat line-clamp-2">
+                    {title2}
+                  </p>
+                </Link>
+                <Link to="/" className="relative block h-[169px]">
+                  <img src={urlL2} className="object-cover h-full" />
                   <p className="px-2 py-[4px] absolute left-0 right-0 bottom-0 overflow-hidden text-sm bg-primary opacity-80 text-grayf1 truncat line-clamp-2">
                     Học lập trình ra làm gì? Cơ hội nghề nghiệp Học lập trình ra
                     làm gì? Cơ hội nghề nghiệp
@@ -37,6 +46,12 @@ const WrapGrid = ({
                 </Link>
                 <Link to="/" className="relative block lg:h-[169px]">
                   <img src={urlR} className="object-cover h-full" />
+                  <p className="px-2 py-[4px] absolute left-0 right-0 bottom-0 overflow-hidden text-sm bg-primary opacity-80 text-grayf1 truncat line-clamp-2">
+                    {title2}
+                  </p>
+                </Link>
+                <Link to="/" className="relative block lg:h-[169px]">
+                  <img src={urlR2} className="object-cover h-full" />
                   <p className="px-2 py-[4px] absolute left-0 right-0 bottom-0 overflow-hidden text-sm bg-primary opacity-80 text-grayf1 truncat line-clamp-2">
                     Giải đáp thắc mắc: Công nghệ thông tin làm nghề
                   </p>
