@@ -1,3 +1,31 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Arial&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Arial&display=swap"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+.font-sans {
+  font-family: "Arial", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
