@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import PhoneIcon from "../icons/PhoneIcon";
 import EmailIcon from "../icons/EmailIcon";
@@ -40,6 +40,11 @@ const images = [
   "https://caodangbachkhoahanoi.edu.vn/wp-content/uploads/2023/06/slide-1.png",
 ];
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div>
       {/* MENU TOP  */}
@@ -102,7 +107,7 @@ const Header = () => {
         <div className="lg:w-[1140px] w-full m-auto h-fit">
           <div className="flex items-center justify-between lg:hidden md:bg-[#337ab7] bg-primary py-3 px-3 md:px-3 font-bold text-grayf1">
             <p>MENU</p>
-            <span>
+            <span onClick={toggleNavbar}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -156,6 +161,67 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {/* MOBILE */}
+      <ul
+        className={`
+             
+             lg:items-center lg:w-auto fixed top-0 left-0 h-full bg-gray-800 w-4/5 z-40  transform transition-transform duration-300 ease-in-out  bg-[#000000] text-grayf1 font-bold py-5 `}
+        style={{
+          transform: isOpen ? "translateX(0)" : "translateX(-110%)",
+        }}
+      >
+        <h3 className="text-xl font-medium text-center uppercase my-7">menu</h3>
+        <p onClick={toggleNavbar} className="absolute top-0 right-0 px-3 py-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-7 h-7"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </p>
+
+        {menuLinks.map((item) => (
+          <li
+            className="py-4 px-3 border-y border-t-[#4b4e50] border-b-[#161b1f] bg-[#262d33] md:text-base text-sm font-thin"
+            key={item.title}
+          >
+            <NavLink to={item.url} className="text-white hover:text-gray-300">
+              {item.title}
+            </NavLink>
+
+            {item.subMenu && (
+              <div className="w-full px-2 py-2 mt-2 rounded-md bg-grayf6 text-grayf1">
+                <div className="flex flex-col">
+                  {item.subMenu &&
+                    item.subMenu.map((item) => (
+                      <NavLink
+                        to="/"
+                        key={item.name}
+                        className="py-2 ml-1 text-sm uppercase border-b border-b-gray80"
+                      >
+                        {item.name}
+                      </NavLink>
+                    ))}
+                </div>
+              </div>
+            )}
+          </li>
+        ))}
+      </ul>
+      {isOpen && (
+        <div
+          onClick={toggleNavbar}
+          className="fixed top-0 right-0 left-0 bottom-0 bg-[#000] opacity-50"
+        ></div>
+      )}
       {/* SLIDE  */}
       {/* <SlideShow>
         {Array(3)

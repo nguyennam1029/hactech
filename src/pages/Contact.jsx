@@ -9,8 +9,8 @@ const Contact = () => {
       <div className="lg:w-[1140px] m-auto w-full grid md:grid-cols-3 grid-cols-1 gap-7 lg:px-0 md:px-2 px-2">
         <div className="grid md:col-span-2 h-fit">
           <Heading heading="Đăng ký xét tuyển trực tuyến" />
-          <div className="py-[30px] px-[80px] bg-secondary text-grayf1 rounded-md">
-            <h5 className="mb-6 text-xl font-bold text-center">
+          <div className="py-[30px] md:px-10 lg:px-[80px] px-5 bg-secondary text-grayf1 rounded-md">
+            <h5 className="mb-6 text-lg font-bold text-center md:text-xl">
               ĐĂNG KÝ XÉT TUYỂN
             </h5>
             <form>

@@ -92,7 +92,7 @@ const HomePage = () => {
               .fill(0)
               .map(() => (
                 <div className="flex items-center  rounded-md border border-[#ccc] bg-[#f7f7f7]">
-                  <h4 className="px-4 py-[18px] font-bold text-[#252525] text-lg ">
+                  <h4 className="px-4 py-[18px] font-bold text-[#252525] text-lg md:line-clamp-3 line-clamp-2">
                     Câu hỏi: Em đăng ký học Công nghệ thông tin thì sẽ học cụ
                     thể những gì ? Học phí là bao nhiêu ?
                   </h4>
@@ -106,7 +106,7 @@ const HomePage = () => {
         <div>
           <Heading heading="HỎI ĐÁP VÀ TƯ VẤN" />
           <div className="grid grid-cols-1 md:grid-cols-2">
-            <div className="py-[30px] px-[50px] bg-secondary text-grayf1">
+            <div className="md:py-[30px] md:px-[50px] py-4 px-5 bg-secondary text-grayf1">
               <h5 className="mb-4 text-xl font-bold text-center">
                 ĐĂNG KÝ XÉT TUYỂN
               </h5>
