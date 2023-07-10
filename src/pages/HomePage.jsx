@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <>
       <div className="lg:w-[1140px] m-auto w-full grid md:grid-cols-3 grid-cols-1 gap-7 md:px-0 px-2">
-        <div className="grid col-span-2 h-fit">
+        <div className="grid md:col-span-2 h-fit">
           <WrapGrid />
           <WrapGrid
             heading="CÔNG NGHỆ Ô TÔ"
@@ -60,8 +60,8 @@ const HomePage = () => {
         </div>
         <div>
           <Heading heading="VIDEO" />
-          <div className="grid grid-cols-3 gap-4">
-            <div className="col-span-2">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+            <div className="md:col-span-2">
               <iframe
                 width="100%"
                 height="400"
@@ -87,12 +87,12 @@ const HomePage = () => {
         </div>
         <div>
           <Heading heading="HỎI ĐÁP VÀ TƯ VẤN" />
-          <div className="grid grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {Array(4)
               .fill(0)
               .map(() => (
                 <div className="flex items-center  rounded-md border border-[#ccc] bg-[#f7f7f7]">
-                  <h4 className="px-4 py-[18px] font-bold text-[#252525] text-lg truncat line-clamp-2 overflow-ellipsis">
+                  <h4 className="px-4 py-[18px] font-bold text-[#252525] text-lg ">
                     Câu hỏi: Em đăng ký học Công nghệ thông tin thì sẽ học cụ
                     thể những gì ? Học phí là bao nhiêu ?
                   </h4>

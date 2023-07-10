@@ -100,7 +100,7 @@ const Header = () => {
       {/* MENU  */}
       <div className="w-full bg-[#0e3e27] md:bg-primary border-b-4 border-b-[#f2bb22]">
         <div className="lg:w-[1140px] w-full m-auto h-fit">
-          <div className="flex items-center justify-between lg:hidden md:bg-[#337ab7] bg-primary py-3 md:px-3 font-bold text-grayf1">
+          <div className="flex items-center justify-between lg:hidden md:bg-[#337ab7] bg-primary py-3 px-3 md:px-3 font-bold text-grayf1">
             <p>MENU</p>
             <span>
               <svg
