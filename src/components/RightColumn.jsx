@@ -43,7 +43,7 @@ const RightColumn = () => {
         </div>
         <Heading heading="TIN MỚI"></Heading>
         <div className="flex flex-col gap-3">
-          {Array(5)
+          {Array(4)
             .fill(0)
             .map(() => (
               <Link to="/" className="flex gap-2 mb-3">

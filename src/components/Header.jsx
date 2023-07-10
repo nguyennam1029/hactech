@@ -6,31 +6,31 @@ import SlideShow from "./Slide/SlideShow";
 
 const menuLinks = [
   {
-    url: "HOME",
+    url: "/",
     title: "HOME",
   },
   {
-    url: "GIỚI THIỆU",
+    url: "gioi-thieu",
     title: "GIỚI THIỆU",
   },
   {
-    url: "TUYỂN SINH",
+    url: "tuyen-sinh",
     title: "TUYỂN SINH",
   },
   {
-    url: "XÉT TUYỂN",
+    url: "xet-tuyen",
     title: "XÉT TUYỂN",
   },
   {
-    url: "TIN TỨC – ĐÀO TẠO",
+    url: "tin-tuc",
     title: "TIN TỨC – ĐÀO TẠO",
   },
   {
-    url: "HỎI ĐÁP & TƯ VẤN",
+    url: "tu-van",
     title: "HỎI ĐÁP & TƯ VẤN",
   },
   {
-    url: "LIÊN HỆ",
+    url: "lien-he",
     title: "LIÊN HỆ",
   },
 ];
