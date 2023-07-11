@@ -2,18 +2,13 @@ import React from "react";
 import WrapGrid from "../components/WrapGrid";
 import Heading from "../components/Heading";
 import RightColumn from "../components/RightColumn";
-
+import Slide from "../components/Slide";
 const HomePage = () => {
   return (
     <>
-      <div class="relative w-full aspect-w-2 aspect-h-1">
-        <img
-          src="https://caodangbachkhoahanoi.edu.vn/wp-content/uploads/2023/06/slide-1.png"
-          alt="Banner"
-          class="object-cover w-full h-full"
-        />
+      <div className="relative w-full aspect-w-2 aspect-h-1">
+        <Slide />
       </div>
-
       <div className="lg:w-[1140px] m-auto w-full grid md:grid-cols-3 grid-cols-1 gap-7 md:px-0 px-2">
         <div className="grid md:col-span-2 h-fit">
           <WrapGrid

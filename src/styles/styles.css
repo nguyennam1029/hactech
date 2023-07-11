@@ -1,0 +1,27 @@
+.swiper-button-next,
+.swiper-button-prev {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 12px;
+  }
+}

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import PhoneIcon from "../icons/PhoneIcon";
 import EmailIcon from "../icons/EmailIcon";
-import SlideShow from "./Slide/SlideShow";
 
 const menuLinks = [
   {
